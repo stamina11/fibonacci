@@ -137,8 +137,6 @@ kubectl apply -f kubernetes/ingress.yaml
 kubectl apply -f kubernetes/argocd-application.yaml
 ```
 
-Update your DNS or `/etc/hosts` to point to `fibonacci.yourdomain.com`.
-
 Test the API:
 
 ```bash
@@ -175,7 +173,7 @@ kubectl delete -f kubernetes/argocd-application.yaml
 
 Monitoring:
 
-- Prometheus + Grafana for metrics via Annotations
+- Prometheus + Grafana for metrics
 - Kubernetes liveness/readiness probes.
 - Alerting on critical metrics.
 
