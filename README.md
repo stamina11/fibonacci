@@ -217,4 +217,3 @@ Vertical Pod Autoscaler (VPA): Consider VPA for recommending optimal CPU and mem
 Load Balancing: Kubernetes Ingress (via Kong) provides advanced load balancing and routing capabilities.
 
 Database/External Dependencies: Ensure any external dependencies (like databases) are also scalable and highly available to avoid becoming bottlenecks.
-
