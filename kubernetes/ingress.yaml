@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: fibonacci-ingress
+  annotations:
+spec:
+  ingressClassName: kong
+  rules:
+  - host: fib.yourhost.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: fibonacci-service
+            port:
+              number: 80
