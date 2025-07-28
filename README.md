@@ -136,6 +136,7 @@ Apply the manifests:
 kubectl apply -f kubernetes/deployment.yaml
 kubectl apply -f kubernetes/service.yaml
 kubectl apply -f kubernetes/ingress.yaml
+kubectl apply -f kubernetes/argocd-application.yaml
 ```
 
 Update your DNS or `/etc/hosts` to point to `fibonacci.yourdomain.com`.
@@ -153,6 +154,7 @@ To clean up:
 kubectl delete -f kubernetes/ingress.yaml
 kubectl delete -f kubernetes/service.yaml
 kubectl delete -f kubernetes/deployment.yaml
+kubectl delete -f kubernetes/argocd-application.yaml
 ```
 
 ## Production Deployment Considerations
@@ -161,7 +163,6 @@ kubectl delete -f kubernetes/deployment.yaml
 
 - Use multi-stage builds for smaller image size.
 - Run as non-root user.
-- Use Gunicorn instead of Flask's built-in server.
 
 ### Continuous Integration/Deployment (CI/CD)
 
@@ -176,7 +177,7 @@ kubectl delete -f kubernetes/deployment.yaml
 
 Monitoring:
 
-- Prometheus + Grafana for metrics.
+- Prometheus + Grafana for metrics via Annotations
 - Kubernetes liveness/readiness probes.
 - Alerting on critical metrics.
 
@@ -185,4 +186,3 @@ Monitoring:
 - HPA for autoscaling by CPU or custom metrics.
 - VPA for resource optimization.
 - Kong Ingress for load balancing.
-- Ensure DB and external dependencies are also scalable.
