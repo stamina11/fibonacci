@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fibonacci
-        image: dockerrepo/fibonacci:latest
+        image: stamina11/fibonacci:latest
         ports:
         - containerPort: 5001
          resources:
