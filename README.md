@@ -140,7 +140,7 @@ kubectl apply -f kubernetes/argocd-application.yaml
 Test the API:
 
 ```bash
-curl http://fibonacci.yourdomain.com/fib?n=10
+curl http://fib.yourhost.com/fib?n=10
 # Expected output: {"n": 10, "fibonacci": 55}
 ```
 
