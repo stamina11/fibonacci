@@ -42,7 +42,6 @@ git clone https://github.com/stamina11/fibonacci.git
 cd fibonacci
 ```
 
-*(Note: If you are using a specific SSH alias for your GitHub account, adjust the clone URL accordingly)*
 
 Create and activate a virtual environment:
 
