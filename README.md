@@ -49,7 +49,6 @@ Create and activate a virtual environment:
 python3 -m venv venv
 source venv/bin/activate  # On macOS/Linux
 # venv\Scripts\activate.bat  # On Windows (Command Prompt)
-# venv\Scripts\Activate.ps1  # On Windows (PowerShell)
 ```
 
 Install dependencies:
