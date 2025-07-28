@@ -122,8 +122,8 @@ docker rm <container_id>
 Build and Push Docker Image:
 
 ```bash
-docker build -t your-dockerhub-username/fibonacci-app:latest .
-docker push your-dockerhub-username/fibonacci-app:latest
+docker build -t statmina11/fibonacci-app:latest .
+docker push stamina11/fibonacci-app:latest
 ```
 
 Update the image field in `kubernetes/deployment.yaml`.
